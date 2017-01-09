@@ -1,0 +1,7 @@
+<div class="gauge-widget">
+  <h6 class="stat-header" ng-show="config.presentation.header.show">{{config.presentation.header.text}}</h6>
+  <i class="fa fa-refresh fa-spin stat-value-loading"  ng-show="!chartLoaded"></i>
+  <div id="chart-{{config.id}}" ng-show="chartLoaded"></div>
+  <h6 class="gauge-no-data" ng-show="gaugeError">No Data Available</h6>
+  <h6 class="stat-footer" ng-show="config.presentation.footer.show">{{config.presentation.footer.text}}</h6>
+</div>
